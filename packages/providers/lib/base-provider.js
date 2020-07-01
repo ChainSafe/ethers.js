@@ -839,9 +839,9 @@ var BaseProvider = /** @class */ (function (_super) {
         }
         var result = tx;
         // Check the hash we expect is the same as the hash the server reported
-        if (hash != null && tx.hash !== hash) {
-            logger.throwError("Transaction hash mismatch from Provider.sendTransaction.", logger_1.Logger.errors.UNKNOWN_ERROR, { expectedHash: tx.hash, returnedHash: hash });
-        }
+        // if (hash != null && tx.hash !== hash) {
+        //     logger.throwError("Transaction hash mismatch from Provider.sendTransaction.", logger_1.Logger.errors.UNKNOWN_ERROR, { expectedHash: tx.hash, returnedHash: hash });
+        // }
         // @TODO: (confirmations? number, timeout? number)
         result.wait = function (confirmations) { return __awaiter(_this, void 0, void 0, function () {
             var receipt;
